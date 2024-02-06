@@ -1,0 +1,50 @@
+@layer layer1, layer2, layer3;
+
+@layer layer3{
+    * {
+        background-color: gainsboro;
+    }
+
+}
+
+
+
+@layer layer2 {
+    .image{
+        width: 300%;
+        height : 300%;
+        border-bottom: 270px solid white;
+        border-top: 20px solid white;
+        border-left: 20px solid white;
+        border-right: 20px solid white;
+        border-radius: 20px;
+    }
+}
+
+
+
+
+
+@layer layer1 {
+    .image-container{
+        display: relative;
+        left :200px;
+        height: 100px;
+        width: 100px;
+        margin: auto;
+        z-index: 0;
+    }
+
+}
+
+.section-text{
+    position: absolute;
+    top : 400px;
+    left : 350px;
+    z-index: 2;
+    color: red;
+}
+
+.improve{
+    font-size: 25px;
+}
